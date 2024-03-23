@@ -1,15 +1,12 @@
 # wdv3_jax_gui
 ![image](https://github.com/MNeMoNiCuZ/wdv3-jax-gui/assets/60541708/77f39500-107d-4d77-ac42-f255258f97fd)
 
-
-Small example thing showing how to use JAX/FLAX to run the WD Tagger V3 models.
-
+## Original documentation
 Base code ~~shamelessly stolen~~ borrowed from https://github.com/neggles/wdv3-timm
 
 The Models directory has been copied from https://github.com/SmilingWolf/JAX-CV  
-One day I might actually package my code like a normal person, but until then...
 
-## How To Use
+## How to install
 
 1. clone the repository and enter the directory:
 ```sh
@@ -40,7 +37,7 @@ python -m pip install -r requirements.txt
 Consult https://github.com/google/jax?tab=readme-ov-file#installation for more infos on how to install JAX with GPU/TPU/ROCm/Metal support
 
 # Running the GUI
-Run `py wdv3_jax_gui.py.py`
+Run `py wdv3_jax_gui.py`
 
 It may also work to just double-click the script, depending on your setup.
 
