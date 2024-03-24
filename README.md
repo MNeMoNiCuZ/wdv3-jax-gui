@@ -85,3 +85,6 @@ Simply choose which model or models you wish to use.
 If you choose only one model and you use the `Save captions with image`-option, the output text-files will have the same name as the input image file.
 
 If you choose multiple models and you use the `Save captions with images`-option, the output text-files will have the model-name as part of the caption name. Like this: `ImageName.ModelName.txt`.
+
+# Credits
+Thanks to [borisignjatovic](https://github.com/borisignjatovic) for helping me out with the code!
