@@ -41,7 +41,7 @@ class ImageCaptioningGUI:
         """Constructor"""
 
         self.root_ui = root_ui
-        root_ui.title("Image Captioning")
+        root_ui.title("WD14 v3 Image Captioning")
 
         # Use update_idletasks to ensure all layout calculations are complete
         root_ui.update_idletasks()
