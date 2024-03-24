@@ -1,4 +1,4 @@
-# wdv3_jax_gui
+# A GUI for batching WD14 v3 image to caption inference
 ![image](https://github.com/MNeMoNiCuZ/wdv3-jax-gui/assets/60541708/77f39500-107d-4d77-ac42-f255258f97fd)
 
 ## Original documentation
