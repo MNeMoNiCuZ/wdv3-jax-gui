@@ -43,48 +43,48 @@ It may also work to just double-click the script, depending on your setup.
 
 # GUI Settings
 ## Input Folder
-Enter the path to the folder with your dataset in it.
+- Specify the path to the folder containing your dataset.
 
 ## Caption Settings
 ### Prefix
-Enter any prefix you wish to add to the captions. If you're training a LoRA, you may want to add an activation trigger word like this:
+- Add any prefix to your captions. For instance, when training a LoRA model, you might use an activation trigger like:
 
-`MyModel, `
+```
+MyModel,
+```
+
 
 ### Suffix
-Enter any suffix you want to add to the end of each caption. Similar to the prefix.
+- Append any suffix to the end of each caption, similar to how you might use a prefix.
 
 ### Blocked Tags
-Enter a comma-separated list of blocked tags here and they will be removed from the output text files.
+- Provide a comma-separated list of tags to exclude from the output text files. 
+- **Example**: 
+  ```
+  1girl, blonde_hair, black_hair, brunette
+  ```
+Tags listed will be omitted from the output.
 
-Example: `1girl, blonde_hair, black_hair, brunette`
-
-Any instances of those tags should be removed from the output now.
-
-## Configuration
-### Multi-Threading (instead of multi-processing)
-The script will already run via multi-processing, so the time saved shouldn't be significant. It's here as an option if you want it.
+## Configuration Options
+### Multi-Threading
+- The script defaults to multi-processing. Opting for multi-threading may offer marginal time savings. This setting is provided for those who prefer it.
 
 ### Recursive Search
-Enable this if you want sub-folders of your input folder to also be captioned.
+- Activating this option enables the inclusion of sub-folders in the captioning process, useful for structured datasets.
 
-This is useful if your input folder has each concept sorted in its own folder.
+### Overwrite Existing Files
+- When enabled, the script overwrites existing text files; if disabled, it bypasses any existing text file.
 
-### Overwrite existing files
-If enabled, it will overwrite existing text-files. If disabled, it will skip any text-file that already exists.
+### Save Captions with Image
+- With this enabled, captions are saved in the same directory as their corresponding images. Can be used concurrently with the option to save captions in a subfolder.
 
-### Save captions with image
-If true, the captions will be saved in the same folder as the images. This can be used at the same time as the option below.
-
-### Save captions in subfolder
-If true, the captions will be saved in a subfolder based on the chosen model name. This can be used at the same time as the option above.
+### Save Captions in Subfolder
+- Activating this saves captions in a subfolder named after the chosen model. It can work in tandem with saving captions alongside images.
 
 ## Select Model
-Simply choose which model or models you wish to use.
-
-If you choose only one model and you use the `Save captions with image`-option, the output text-files will have the same name as the input image file.
-
-If you choose multiple models and you use the `Save captions with images`-option, the output text-files will have the model-name as part of the caption name. Like this: `ImageName.ModelName.txt`.
+- Choose one or multiple models for caption generation. 
+- For a single model and using `Save captions with image`, output text files match the input image filenames.
+- With multiple models and `Save captions with images`, output files include the model name, formatted as `ImageName.ModelName.txt`.
 
 # Credits
 Thanks to [borisignjatovic](https://github.com/borisignjatovic) for helping me out with the code!
